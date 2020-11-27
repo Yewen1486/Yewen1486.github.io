@@ -1,442 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="UTF-8">
-		<!-- For IE -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-		<!-- For Resposive Device -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<title>9181062301团支部</title>
-
-		<!-- Favicon -->
-		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
-
-
-		<!-- Main style sheet -->
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<!-- responsive style sheet -->
-		<link rel="stylesheet" type="text/css" href="css/responsive.css">
-
-
-		<!-- Fix Internet Explorer ______________________________________-->
-
-		<!--[if lt IE 9]>
-			<script src="https://www.jq22.com/jquery/html5.min.js"></script>
-			<script src="vendor/html5shiv.js"></script>
-			<script src="vendor/respond.js"></script>
-		<![endif]-->
-
-			
+		<title></title>
 	</head>
-
+	<style>
+		.inp{
+			color: gray;
+		}
+		.tab{
+			font-size: 18px;
+		}
+		#bck{
+			height: 70px;
+			background: #282828;
+		}
+		a{
+			font-size: 16px;
+			color: #999999;
+			display: inline-block;
+			margin: 20px;
+		}
+	</style>
 	<body>
-		<div class="main-page-wrapper">
-
-			<!-- ===================================================
-				Loading Transition
-			==================================================== -->
-			<div id="loader-wrapper">
-				<div id="loader"></div>
-			</div>
+		<!--
+			3行4列: 每行有4个单元格 (有3行)
 			
+			tr: 行
+			td: 单元格
 			
-			<header class="theme-menu-wrapper menu-style-one">
-				<div class="container">
-					<div class="header-wrapper clearfix">
-						<!-- Logo -->
-						<div class="logo float-left tran4s"><a href="index.html"><img src="images/logo/log.png" alt="Logo" style="width: 550px;"></a></div>
-
-						<!-- ============================ Theme Menu ========================= -->
-						<nav class="theme-main-menu float-right navbar" id="mega-menu-wrapper">
-							<!-- Brand and toggle get grouped for better mobile display -->
-						   <div class="navbar-header">
-						     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-						       <span class="sr-only">Toggle navigation</span>
-						       <span class="icon-bar" style="color: purple;"></span>
-						       <span class="icon-bar"></span>
-						       <span class="icon-bar"></span>
-						     </button>
-						   </div>
-						   <!-- Collect the nav links, forms, and other content for toggling -->
-						   <div class="collapse navbar-collapse" id="navbar-collapse-1">
-								<ul class="nav">
-									<li class="dropdown-holder menu-list" ><a href="index.html" class="tran3s"style="font-family: '微软雅黑';">班级简介</a>
-										<ul class="sub-menu">
-											<li><a href="index.html">关于我们</a></li>
-										</ul>
-									</li>
-									
-									<li class="dropdown-holder menu-list"><a href="#" class="tran3s"  style="font-family: '微软雅黑';">班级活动</a>
-										<ul class="sub-menu">
-											<li><a href="event-grid.html">班级活动</a></li>
-											<li><a href="event-grid2.html">团建活动</a></li>
-										</ul>
-									</li>
-									
-									<!--<li class="dropdown-holder menu-list"><a href="#" class="tran3s" style="font-family: '微软雅黑';">班级风采</a>
-										<ul class="sub-menu">
-											
-										</ul>
-									</li>-->
-									
-									<li class="login"><button class="tran3s" data-toggle="modal" data-target=".signInModal" style="font: '微软雅黑';">了解更多</button></li>
-								</ul>
-						   </div><!-- /.navbar-collapse -->
-						</nav> <!-- /.theme-main-menu -->
-					</div> <!-- /.header-wrapper -->
-				</div>
-			</header> <!-- /.theme-menu-wrapper -->
+			width: 表格宽度(像素px可以省略不写)
+			height: 表格高度
+			border: 边框大小
+			cellspacing: 单元格之间间距
+		-->
+		<table width="690" height="250" border="1" cellspacing="0" class="tab">
+			<!--第1行-->
+			<tr>
+				<td width="150px" rowspan="4" align="center" >总体信息</td>
+				<td colspan="2" align="center">用户注册</td>
+				<!--<td>3</td>-->
+			</tr>
 			
-			<!-- 
-			=============================================
-				Theme Inner Banner
-			============================================== 
-			-->
-			<!--			
-				<div class="inner-banner">
-					<div class="opacity">
-						<div class="container">
-							<h2 style="font-family: 方正姚体;"> 班 级 简 介 </h2>
-							<ul>
-								<li><a href="index.html" class="tran3s" style="font-family: '微软雅黑';">关于我们</a></li>
-						
-							</ul>
-						</div> <!-- /.container -->
-					</div> <!-- /.opacity -->
-				</div> <!-- /.inner-banner -->
+			<!--第2行-->
+			<tr>
+				<!--<td>1</td>-->
+				<td align="right" width="180px">用户名:</td>
+				<td class="inp" width="360px"><input type="text" placeholder="填写用户名"></td>
+			</tr>
 			
-						<div id="theme-main-banner" class="banner-one" style="margin-bottom: 20px;">
-				<div data-src="images/home/slide-1.jpg">
-					<div class="camera_caption">
-						<div class="container text-center" >
-							
-							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s" > 了 解 <span class="s-color"> 我 们 </span></h1>
-							<h3 class="wow fadeInUp animated">about us</h3>
-							
-						</div> <!-- /.container -->
-					</div> <!-- /.camera_caption -->
-				</div>
-				<div data-src="images/home/slide-2.jpg">
-					<div class="camera_caption">
-						<div class="container text-center">
-							
-							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s"> 了 解 <span class="s-color"> 我 们 </span></h1>
-							<h3 class="wow fadeInUp animated">about us</h3>
-						
-						</div> <!-- /.container -->
-					</div> <!-- /.camera_caption -->
-				</div>
-			</div> 
-
-			<!-- 
-			=============================================
-				About Text
-			============================================== 
-			-->
-			<div class="about-text">
-				<div class="container">
-					<div class="wrapper">
-						<div class="row">
-							<div class="col-sm-6 col-xs-12">
-								<img src="images/inner-page/1.jpg" alt="" class="space">
-								<div class="theme-title">
-									<h6 style="font-family: '微软雅黑';">关于我们</h6>
-									<h2 style="font-family: '方正姚体';">从这里开始</h2>
-								</div> 
-					
-								<p>
-									 所有晴雨都同舟，<br>所有言茶不言酒，<br>所有故土与漂游，<br>故事里的春与秋
-								</p>
-							</div>
-							<div class="col-sm-6 col-xs-12 m-fix">
-								<div class="theme-title">
-									<h6></h6>
-									<h2 style="font-family: 方正姚体;">我们的团支部</h2>
-								</div> 
-							     <!-- /.theme-title -->
-								<p class="space">在南理工计科院有这样一个团支部：有每个学期都是综测第一的大佬？？还有自学成才的IT大神，浑身是艺术细胞的文艺青年，挥洒汗水与体育场的“彪形大汉”，沉醉于学习无法自拔的阳光teenagers,真心为他人打call的隐居大佬......</p>
-								<img src="images/inner-page/2.jpg" alt="">	
-							</div>
-						</div>
-					</div> <!-- /.wrapper -->
-				</div> <!-- /.container -->
-			</div> <!-- /.about-text -->
-
-
-
-			<!-- 
-			=============================================
-				Theme Counter Section
-			============================================== 
-			-->
-			<div class="theme-counter">
-				<div class="count-particles">
-  					<span class="js-count-particles">--</span>
-				</div>
-				<div id="particles-js"></div>
-				<div class="opacity">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-3 col-xs-6">
-								<h3><span class="counter">60</span></h3>
-								<p style="font-family: '微软雅黑';">学生</p>
-							</div>
-							<div class="col-sm-3 col-xs-6">
-								<h3><span class="counter">？？</span>+</h3>
-								<p style="font-family: '微软雅黑';">IT大神</p>
-							</div>
-							<div class="col-sm-3 col-xs-6">
-								<h3><span class="counter">??</span>+</h3>
-								<p style="font-family: '微软雅黑';">文青</p>
-							</div>
-							<div class="col-sm-3 col-xs-6">
-								<h3><span class="counter">??</span>+</h3>
-								<p style="font-family: '微软雅黑';">隐居大佬</p>
-							</div>
-						</div>
-					</div> <!-- /.container -->
-				</div> <!-- /.opacity -->
-			</div> <!-- /.theme-counter -->
-			
-
-			<!-- 
-			=============================================
-				Our Instructors
-			============================================== 
-			-->
-			<div class="our-instructor">
-				<div class="container">
-					<div class="theme-title text-center">
-						<h2 style="font-family: '方正姚体';">班级组成</h2>
-					</div> <!-- /.theme-title -->
-
-					<div class="row">
-						<div class="instructor-slider">
-							<div class="item">
-								<div class="single-member">
-									<div class="image">
-										<img src="images/team/0.jpg" alt="">
-										 <!-- /.image -->
-									</div>
-									<h6><a href="#" class="tran3s">张太裕</a></h6>
-									<p>副书记 </p>
-								</div> <!-- /.single-member -->
-							</div>
-							<div class="item">
-								<div class="single-member">
-									<div class="image">
-										<img src="images/team/1.jpg" alt="">
-										 <!-- /.image -->
-									</div>
-									<h6><a href="#" class="tran3s">李怡然</a></h6>
-									<p>书记 </p>
-								</div> <!-- /.single-member -->
-							</div> <!-- /.col- -->
-							
-							<div class="item">
-								<div class="single-member">
-									<div class="image">
-										<img src="images/team/01.jpg" alt="">
-										 <!-- /.image -->
-									</div>
-									<h6><a href="#" class="tran3s">邢宇</a></h6>
-									<p>宣传委员 </p>
-								</div> <!-- /.single-member -->
-							</div> <!-- /.col- -->
-							
-							<div class="item">
-								<div class="single-member">
-									<div class="image">
-										<img src="images/team/h1.jpg" alt="">
-										 <!-- /.image -->
-									</div>
-									<h6><a href="#" class="tran3s">罗文水</a></h6>
-									<p>宣传委员 </p>
-								</div> <!-- /.single-member -->
-							</div> <!-- /.col- -->
-							
-						</div> <!-- /.instructor-slider -->
-					</div> <!-- /.row -->
-				</div> <!-- /.container -->
-			</div> <!-- /.our-instructor -->
-			
-
-
-			<!-- 
-			=============================================
-				Testimonial Style One
-			============================================== 
-			-->
-			<div class="testimonial-styleOne m-bottom0">
-				<div class="container">
-					<div class="theme-title text-center">
-						<h2 style="font-family: '方正姚体';">七嘴八舌</h2>
-					
-					</div> <!-- /.theme-title -->
-
-					<div id="testimonial-carousel-one" class="carousel slide" data-ride="carousel" data-interval="5000">
-
-					  	<div class="main-wrapper">
-					  		<div class="shadow"></div>
-					  		<!-- Wrapper for slides -->
-						  	<div class="carousel-inner">
-							    <div class="item active">
-								    <img src="images/home/7.jpg" alt="">
-								    <h6>匿名</h6>
-								  
-								    <p>班长太帅，让我们情何以堪</p>
-							    </div>
-
-							    <div class="item">
-							    	<img src="images/home/8.jpg" alt="">
-								    <h6>匿名</h6>
-								    
-								    <p>不符青葱韶华，勇力先风潮头</p>
-							    </div>
-
-							    <div class="item">
-							    	<img src="images/home/7.jpg" alt="">
-								    <h6>匿名</h6>
-								    
-								    <p>9181062301班越来越好~</p>
-							    </div>
-
-							    <div class="item">
-							    	<img src="images/home/8.jpg" alt="">
-								    <h6>敬欧</h6>
-								    
-								    <p>大学跟我想象的完全不一样啊！谁再说上大学轻松，我想打他</p>
-							    </div>
-
-							    <div class="item">
-							    	<img src="images/home/7.jpg" alt="">
-								    <h6>匿名</h6>
-								    
-								    <p>遇见南理工，遇见新的自己</p>
-								</div>
-
-							    <div class="item">
-							    	<img src="images/home/8.jpg" alt="">
-								    <h6>匿名</h6>
-								    
-								    <p>在大学遇到最初最美好的你们。</p>
-							    </div>
-							    <div class="item">
-							    	<img src="images/home/7.jpg" alt="">
-								    <h6>匿名</h6>
-								    
-								    <p>班副好帅</p>
-							    </div>
-							    <div class="item">
-							    	<img src="images/home/8.jpg" alt="">
-								    <h6>匿名</h6>
-								    
-								    <p>希望在大家的共同努力下，我们9181062301班会成为一个温暖的大家庭</p>
-							    </div>
-							    <div class="item">
-							    	<img src="images/home/7.jpg" alt="">
-								    <h6>张太裕</h6>
-								    
-								    <p>女生太少，机会不要找</p>
-							    </div>
-						  	</div> <!-- /.carousel-inner -->
-
-						  	<!-- Left and right controls -->
-							<a class="left carousel-control" href="#testimonial-carousel-one" data-slide="prev">
-							    <i class="fa fa-chevron-left" aria-hidden="true"></i>
-							    
-							</a>
-							<a class="right carousel-control" href="#testimonial-carousel-one" data-slide="next">
-							    <i class="fa fa-chevron-right" aria-hidden="true"></i>
-							    
-							</a>
-					  	</div> <!-- /.main-wrapper -->
-					</div> <!-- /#testimonial-carousel-one -->
-				</div> <!-- /.container -->
-			</div> <!-- /.testimonial-styleOne -->
-
-
-			<!-- 
-			=============================================
-				Instructor Banner
-			============================================== 
-			-->
-			<div class="instructor-banner m-top0">
-				<div class="opacity opacity-one">
-					<div class="container">
-						<h4 style="font-family: '微软雅黑';">了解更多</h4>
-						<h2>点击查看9181062301团支部</h2>
-						<a href="https://weibo.com/u/7504451789?refer_flag=1001030103_&is_hot=1" class="tran3s hvr-trim" style="font-family: '微软雅黑';">点我转至微博</a>
-					</div> <!-- /.container -->
-				</div> <!-- /.opacity -->
-			</div> <!-- /.instructor-banner -->
-
-
-
-
-			<div class="modal fade signInModal theme-modal-box" role="dialog">
-				<div class="modal-dialog" >
-				    <!-- Modal content-->
-				    <div class="modal-content" >
-					    <div class="modal-body" >
-					       
-					      <h3>扫描下方二维码,关注公众号可获取更多！</h3>
-					      
-					        <div class="image">
-										<img src="images/team/h2.jpg" alt="">
-										 <!-- /.image -->
-							</div>
-					        <div><a href="sign-up.html" class="p-color tran3s"></a></div>
-					    </div> <!-- /.modal-body -->
-				    </div> <!-- /.modal-content -->
-				</div> <!-- /.modal-dialog -->
-			</div> <!-- /.signInModal -->
-
-
-	        
-
-	        <!-- Scroll Top Button -->
-			<button class="scroll-top tran3s">
-				<i class="fa fa-angle-up" aria-hidden="true"></i>
-			</button>
-			
-
-
-		<!-- Js File_________________________________ -->
-
-		<!-- j Query -->
-		<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-		<!-- Bootstrap Select JS -->
-		<script type="text/javascript" src="vendor/bootstrap-select/dist/js/bootstrap-select.js"></script>
-
-		<!-- Bootstrap JS -->
-		<script src="https://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
-
-		<!-- Vendor js _________ -->
-		<!-- Camera Slider -->
-		<script type='text/javascript' src='vendor/Camera-master/scripts/jquery.mobile.customized.min.js'></script>
-	    <script type='text/javascript' src='vendor/Camera-master/scripts/jquery.easing.1.3.js'></script> 
-	    <script type='text/javascript' src='vendor/Camera-master/scripts/camera.min.js'></script>
-	    <!-- Mega menu  -->
-		<script type="text/javascript" src="vendor/bootstrap-mega-menu/js/menu.js"></script>
-		
-		<!-- WOW js -->
-		<script type="text/javascript" src="vendor/WOW-master/dist/wow.min.js"></script>
-		<!-- owl.carousel -->
-		<script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
-		<!-- js count to -->
-		<script type="text/javascript" src="vendor/Counter/jquery.counterup.min.js"></script>
-		<script src="vendor/Counter/jquery.waypoints.min.js"></script>
-		<!-- partical Js -->
-		<script type="text/javascript" src="vendor/particles.js-master/particles.min.js"></script>
-		<script type="text/javascript" src="vendor/particles.js-master/demo/js/lib/stats.js"></script>
-		<script type="text/javascript" src="vendor/particles.js-master/demo/js/app.js"></script>
-
-		<!-- Theme js -->
-		<script type="text/javascript" src="js/theme.js"></script>
-
-		</div> <!-- /.main-page-wrapper -->
+			<!--第3行-->
+			<tr>
+				<!--<td>1</td>-->
+				<td align="right">密码:</td>
+				<td><input type="password" ></td>
+			</tr>
+			<tr>
+				<!--<td>1</td>-->
+				<td colspan="2" align="center">
+					<input type="submit" value="提交" class="btn2"  />
+					<input type="reset" value="重置" class="btn2"  />
+				</td>
+				<!--<td>3</td>-->
+			</tr>
+		</table>
+		<div id="bck"><a>高俊尧 9181068403... 退出群聊</a></div>
 	</body>
 </html>
